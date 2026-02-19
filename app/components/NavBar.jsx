@@ -1,17 +1,21 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image, Button} from 'react-native';
 import { FontAwesome } from '@react-native-vector-icons/fontawesome6';
-import { createNativeBottomTabNavigator } from '@react-navigation/bottom-tabs/unstable';
 import HomeScreen from '../screens/HomeScreen';
-import ProfileScreen from '../screens/ProfileScreen';
+import SportScreen from '../screens/SportScreen';
+import NutritionScreen from '../screens/NutritionScreen'
+import TrackScreen from '../screens/TrackScreen'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-const Tab = createNativeBottomTabNavigator();
+const Tab = createBottomTabNavigator();
 
 function NavBar() {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Profile" component={ProfileScreen} />
+      <Tab.Screen name="Accueil" component={HomeScreen} />
+      <Tab.Screen name="Sport" component={SportScreen} />
+      <Tab.Screen name="Nutrition" component={NutritionScreen} />
+      <Tab.Screen name="Track" component={TrackScreen} />
     </Tab.Navigator>
   );
 }
