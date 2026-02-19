@@ -11,13 +11,22 @@ import AddComment from "../components/AddComment"
 
 
 const HomeScreen = () => {
-    const [progress, setProgress] = useState(-100);
+    const [date, setDate] = useState(new Date());
 
   return (
       <View style = {style.container}>
           <SafeAreaView />
           <NavBarTop />
-          <InfoDate />
+          <View style = {{marginTop: 7, paddingLeft: 20, paddingRight: 20}}>
+                      <Text style = {{fontSize: 30, fontWeight: 900, color: '#FFFFFF'}}>Aujourd’hui</Text>
+                      <Text style={{ fontSize: 15, fontWeight: '400', color: '#8D8D8D' }}>
+                        {date.toLocaleDateString('fr-FR', {
+                          weekday: 'long',
+                          month: 'short',
+                          day: 'numeric'
+                        })}
+                      </Text>
+                  </View>
           <View style = {style.progressContainer}>
             <View style = {style.singleProgressBars}>
                 <ProgressBarsKcal />
@@ -27,7 +36,6 @@ const HomeScreen = () => {
                     <ProgressBarsLitre />
                 </View>
           </View>
-          <AddComment />
       </View>
   )
 };
@@ -36,13 +44,14 @@ const style = StyleSheet.create({
 
         container: {
             display: 'flex',
-            backgroundColor: 'black',
+            backgroundColor: '#141319',
             flex: 1,
-            color: '141319'
+            color: '141319',
+            marginTop: -30
         },
         progressContainer: {
             display: 'flex',
-            marginTop: '150',
+            marginTop: '75',
             alignContent: 'center',
             color: 'fff'
         },
@@ -57,7 +66,7 @@ const style = StyleSheet.create({
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'center',
-            marginTop: '145'
+            marginTop: '75'
         }
     })
 

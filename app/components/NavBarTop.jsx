@@ -6,7 +6,7 @@ import {StyleSheet, Text, View, Image} from 'react-native';
 const NavBarTop = () => {
     return (
             <View style = {style.navContainer}>
-                <Image source={require('../src/images/plus.png')} style = {{width: 22, height:22}} />
+                <Image source={require('../src/images/plus.png')} style = {{width: 0, height:0}} />
                     <View style = {style.leftNavContent}>
                             <View style = {style.strikeIndicator}>
                                 <Image source={require('../src/images/strike.png')} />

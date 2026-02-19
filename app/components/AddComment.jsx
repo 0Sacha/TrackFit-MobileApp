@@ -8,7 +8,6 @@ export default function AddComment() {
       <View style = {style.container} >
           <View style = {style.containerButton} >
               <Button style = {style.button} title="Ajouter un commentaire"/>
-              <Image style = {style.images} source={require('../src/images/plus.png')}/>
           </View>
       </View>
   );
@@ -26,7 +25,7 @@ const style = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         color: 'fff',
         textDecorationStyle: 'none',
         marginTop: '46',
@@ -43,11 +42,6 @@ const style = StyleSheet.create({
 
     button: {
         display: 'flex',
-        color: 'fff'
+        color: 'fff',
         },
-
-    images: {
-        height: '20',
-        width: '20'
-        }
     })
