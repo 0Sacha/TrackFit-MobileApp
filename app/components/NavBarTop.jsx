@@ -38,6 +38,8 @@ const style = StyleSheet.create({
             display: 'flex',
             flexDirection: 'row',
             alignItems: 'center',
+            gap:5,
+            fontSize:12,
             }
     })
 

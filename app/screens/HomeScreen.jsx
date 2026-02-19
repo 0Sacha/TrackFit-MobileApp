@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import {StyleSheet, Text, View, Image, Button} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import InfoDate from "../components/InfoDate"
 import NavBarTop from "../components/NavBarTop"
 import ProgressBarsKcal from "../components/ProgressBarsKcal"
 import ProgressBarsMeal from "../components/ProgressBarsMeal"
 import ProgressBarsLitre from "../components/ProgressBarsLitre"
-import AddMeal from "../components/AddMeal"
 import AddComment from "../components/AddComment"
+
 
 const HomeScreen = () => {
     const [progress, setProgress] = useState(-100);
 
   return (
       <View style = {style.container}>
+          <SafeAreaView />
           <NavBarTop />
           <InfoDate />
           <View style = {style.progressContainer}>

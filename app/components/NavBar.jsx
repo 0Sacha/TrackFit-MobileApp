@@ -6,12 +6,13 @@ import SportScreen from '../screens/SportScreen';
 import NutritionScreen from '../screens/NutritionScreen'
 import TrackScreen from '../screens/TrackScreen'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import iconSet from '@expo/vector-icons/build/Fontisto';
 
 const Tab = createBottomTabNavigator();
 
 function NavBar() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={{headerShown:false, tabBarStyle:{backgroundColor:'#141319', borderColor:'#505050', }}}>
       <Tab.Screen name="Accueil" component={HomeScreen} />
       <Tab.Screen name="Sport" component={SportScreen} />
       <Tab.Screen name="Nutrition" component={NutritionScreen} />
