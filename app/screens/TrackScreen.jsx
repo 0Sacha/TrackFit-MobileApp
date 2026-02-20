@@ -15,7 +15,7 @@ const TrackScreen = () => {
             <NavBarTop />
             <View style={{ marginTop: 7, paddingLeft: 20, paddingRight: 20 }}>
                 <Text style={{ fontSize: 30, fontWeight: 900, color: '#FFFFFF' }}>Track</Text>
-                <Text style={{ fontSize: 15, fontWeight: '400', color: '#8D8D8D' }}>
+                <Text style={{ fontSize: 15, fontWeight: 400, color: '#8D8D8D' }}>
                     {date.toLocaleDateString('fr-FR', {
                         weekday: 'long',
                         month: 'short',
@@ -28,22 +28,22 @@ const TrackScreen = () => {
                     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                         <MultiArcCircle radius={75} intervals={[{ start: -100, end: 100 }]} color="#454545" backgroundColor="transparent" width={17} />
                         <MultiArcCircle radius={75} intervals={[{ start: -100, end: -100 }]} color="#F00" backgroundColor="transparent" width={17} />
-                        <Text style={{ color: '#FFFFFF', fontSize: '24', fontWeight: '900' }}>0 kcal</Text>
-                        <Text style={{ color: '#9A9A9A', fontSize: '12', fontWeight: '900' }}>Restant</Text>
+                        <Text style={{ color: '#FFFFFF', fontSize: 24, fontWeight: 900 }}>0 kcal</Text>
+                        <Text style={{ color: '#9A9A9A', fontSize: 12, fontWeight: 900 }}>Restant</Text>
                     </View>
                 </View>
                 <View style={style.progressBars}>
                     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                         <MultiArcCircle radius={75} intervals={[{ start: -100, end: 99 }]} color="#454545" backgroundColor="transparent" width={17} />
                         <MultiArcCircle radius={75} intervals={[{ start: -100, end: -100 }]} color="#F00" backgroundColor="transparent" width={17} />
-                        <Text style={{ color: '#FFFFFF', fontSize: '24', fontWeight: '900' }}>0/3</Text>
-                        <Text style={{ color: '#9A9A9A', fontSize: '12', fontWeight: '900' }}>Repas</Text>
+                        <Text style={{ color: '#FFFFFF', fontSize: 24, fontWeight: 900 }}>0/3</Text>
+                        <Text style={{ color: '#9A9A9A', fontSize: 12, fontWeight: 900 }}>Repas</Text>
                     </View>
                     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                         <MultiArcCircle radius={75} intervals={[{ start: -100, end: 100 }]} color="#454545" backgroundColor="transparent" width={17} />
                         <MultiArcCircle radius={75} intervals={[{ start: -100, end: -100 }]} color="#F00" backgroundColor="transparent" width={17} />
-                        <Text style={{ color: '#FFFFFF', fontSize: '24', fontWeight: '900' }}>0/3</Text>
-                        <Text style={{ color: '#9A9A9A', fontSize: '12', fontWeight: '900' }}>Litres</Text>
+                        <Text style={{ color: '#FFFFFF', fontSize: 24, fontWeight: 900 }}>0/3</Text>
+                        <Text style={{ color: '#9A9A9A', fontSize: 12, fontWeight: 900 }}>Litres</Text>
                     </View>
                 </View>
             </View>
@@ -57,12 +57,12 @@ const style = StyleSheet.create({
         display: 'flex',
         backgroundColor: '#141319',
         flex: 1,
-        color: '141319',
+        color: '#141319',
         marginTop: -30
     },
     progressContainer: {
         display: 'flex',
-        marginTop: '75',
+        marginTop: 75,
         alignContent: 'center',
         color: 'fff'
     },
@@ -77,7 +77,7 @@ const style = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
-        marginTop: '75'
+        marginTop: 75
     }
 })
 

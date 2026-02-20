@@ -26,7 +26,7 @@ const style = StyleSheet.create({
         justifyContent: 'space-between',
         color: 'fff',
         textDecorationStyle: 'none',
-        marginTop: '20',
+        marginTop: 20,
         backgroundColor: 'rgba(18, 24, 39, 0.00)',
         height: 50,
         width: '90%',

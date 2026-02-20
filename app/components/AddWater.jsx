@@ -9,7 +9,7 @@ export default function AddWater() {
         <View style={style.container} >
             <View style={style.containerButton} >
                 <FontAwesome6 name="minus" size={24} color="white" />
-                <Text style={{ color: '#FFFFFF', fontSize: '18', fontWeight: '900' }}>0 Litres</Text>
+                <Text style={{ color: '#FFFFFF', fontSize: 18, fontWeight: 900 }}>0 Litres</Text>
                 <FontAwesome6 name="plus" size={20} color="white" />
             </View>
         </View>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, Image, Button } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { MultiArcCircle } from 'react-native-circles';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
@@ -27,7 +27,7 @@ const SportScreen = () => {
                     <Text style={{ fontSize: 15, fontWeight: '400', color: '#8D8D8D' }}>
                         {date.toLocaleDateString('fr-FR', {
                             weekday: 'long',
-                            month: 'long',
+                            month: 'short',
                             day: 'numeric'
                         })}
                     </Text>
@@ -40,22 +40,22 @@ $                </View>
                     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                         <MultiArcCircle radius={75} intervals={[{ start: -100, end: 100 }]} color="#454545" backgroundColor="transparent" width={17} />
                         <MultiArcCircle radius={75} intervals={[{ start: -100, end: -100 }]} color="#F00" backgroundColor="transparent" width={17} />
-                        <Text style={{ color: '#FFFFFF', fontSize: '24', fontWeight: '900' }}>0 pas</Text>
-                        <Text style={{ color: '#9A9A9A', fontSize: '12', fontWeight: '900' }}>Restant</Text>
+                        <Text style={{ color: '#FFFFFF', fontSize: 24, fontWeight: 900 }}>0 pas</Text>
+                        <Text style={{ color: '#9A9A9A', fontSize: 12, fontWeight: 900 }}>Restant</Text>
                     </View>
                 </View>
                 <View style={style.progressBars}>
                     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                         <MultiArcCircle radius={75} intervals={[{ start: -100, end: 99 }]} color="#454545" backgroundColor="transparent" width={17} />
                         <MultiArcCircle radius={75} intervals={[{ start: -100, end: -100 }]} color="#F00" backgroundColor="transparent" width={17} />
-                        <Text style={{ color: '#FFFFFF', fontSize: '24', fontWeight: '900' }}>0/3</Text>
-                        <Text style={{ color: '#9A9A9A', fontSize: '12', fontWeight: '900' }}>Séances</Text>
+                        <Text style={{ color: '#FFFFFF', fontSize: 24, fontWeight: 900 }}>0/3</Text>
+                        <Text style={{ color: '#9A9A9A', fontSize: 12, fontWeight: 900 }}>Séances</Text>
                     </View>
                     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                         <MultiArcCircle radius={75} intervals={[{ start: -100, end: 100 }]} color="#454545" backgroundColor="transparent" width={17} />
                         <MultiArcCircle radius={75} intervals={[{ start: -100, end: -100 }]} color="#F00" backgroundColor="transparent" width={17} />
-                        <Text style={{ color: '#FFFFFF', fontSize: '24', fontWeight: '900' }}>0/3 Km</Text>
-                        <Text style={{ color: '#9A9A9A', fontSize: '12', fontWeight: '900' }}>Distances</Text>
+                        <Text style={{ color: '#FFFFFF', fontSize: 24, fontWeight: 900 }}>0/3 Km</Text>
+                        <Text style={{ color: '#9A9A9A', fontSize: 12, fontWeight: 900 }}>Distances</Text>
                     </View>
                 </View>
             </View>
@@ -69,12 +69,12 @@ const style = StyleSheet.create({
         display: 'flex',
         backgroundColor: '#141319',
         flex: 1,
-        color: '141319',
+        color: '1#41319',
         marginTop: -30
     },
     progressContainer: {
         display: 'flex',
-        marginTop: '75',
+        marginTop: 75,
         alignContent: 'center',
         color: 'fff'
     },
@@ -89,7 +89,7 @@ const style = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
-        marginTop: '75'
+        marginTop: 75
     }
 })
 
