@@ -5,7 +5,7 @@ import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 const NavBarTop = () => {
     return (
             <View style = {style.navContainer}>
-                <Text style={{color: 'grey', fontStyle:'italic'}}>Version bêta</Text>
+                <Text style={{color: 'grey', fontStyle:'italic'}}>V 0.0.1 alpha</Text>
                     <View style = {style.leftNavContent}>
                             <View style = {style.strikeIndicator}>
                                 <FontAwesome6 name="fire-flame-curved" size={22} color="#FF4D00" />
