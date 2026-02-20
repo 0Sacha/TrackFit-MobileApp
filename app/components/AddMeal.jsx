@@ -1,14 +1,11 @@
-import React from 'react';
 import {StyleSheet, View, Image, Button} from 'react-native';
-import { MultiArcCircle } from 'react-native-circles';
-import {Text} from 'react-native';
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 
 export default function AddMeal() {
   return (
       <View style = {style.container} >
           <View style = {style.containerButton} >
               <Button style = {style.button} title="Ajouter un repas" />
-              <Image style = {style.images} source={require('../src/images/plus.png')}/>
           </View>
       </View>
   );
@@ -38,16 +35,11 @@ const style = StyleSheet.create({
         borderWidth: 1,
         borderColor: 'rgba(80, 80, 80, 0.23)',
         borderStyle: 'solid',
-        borderRadius: 50
+        borderRadius: 18
         },
 
     button: {
         display: 'flex',
         color: 'fff'
         },
-
-    images: {
-        height: '20',
-        width: '20'
-        }
     })

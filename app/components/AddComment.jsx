@@ -1,13 +1,11 @@
-import React from 'react';
 import {StyleSheet, View, Image, Button} from 'react-native';
-import { MultiArcCircle } from 'react-native-circles';
-import {Text} from 'react-native';
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 
 export default function AddComment() {
   return (
       <View style = {style.container} >
           <View style = {style.containerButton} >
-              <Button style = {style.button} title="Ajouter un commentaire"/>
+              <Button style = {style.button} title="Ajouter un commentaire" />
           </View>
       </View>
   );
@@ -25,10 +23,10 @@ const style = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'space-between',
         color: 'fff',
         textDecorationStyle: 'none',
-        marginTop: '46',
+        marginTop: '20',
         backgroundColor: 'rgba(18, 24, 39, 0.00)',
         height: 50,
         width: '90%',
@@ -37,11 +35,13 @@ const style = StyleSheet.create({
         borderWidth: 1,
         borderColor: 'rgba(80, 80, 80, 0.23)',
         borderStyle: 'solid',
-        borderRadius: 50
+        borderRadius: 18
         },
 
     button: {
         display: 'flex',
         color: 'fff',
+        textDecorationStyle: 'none',
+        title: 'Ajouter un commentaire',
         },
     })

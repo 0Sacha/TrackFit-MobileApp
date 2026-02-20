@@ -12,9 +12,9 @@ import Entypo from '@expo/vector-icons/Entypo';
 
 const Tab = createBottomTabNavigator();
 
-function NavBar() {
+function TabBar() {
   return (
-    <Tab.Navigator screenOptions={{headerShown:false, tabBarStyle:{backgroundColor:'#141319', borderColor:'#505050', paddingTop:'15' }}}>
+    <Tab.Navigator screenOptions={{headerShown:false, tabBarStyle:{backgroundColor:'#141319', borderColor:'#transparent', paddingTop:'15' }}}>
       <Tab.Screen name="Accueil" component={HomeScreen} 
       options={{tabBarIcon:() => <MaterialIcons name="home" size={24} color="white" /> }}/>
       <Tab.Screen name="Sport" component={SportScreen}
@@ -31,4 +31,4 @@ const style = StyleSheet.create({
 
     })
 
-export default NavBar;
+export default TabBar;

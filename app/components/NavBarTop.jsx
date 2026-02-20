@@ -1,18 +1,17 @@
 import React from 'react';
-import {StyleSheet, Text, View, Image} from 'react-native';
-
-// Composant de la barre de navigation
+import {StyleSheet, Text, View } from 'react-native';
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 
 const NavBarTop = () => {
     return (
             <View style = {style.navContainer}>
-                <Image source={require('../src/images/plus.png')} style = {{width: 0, height:0}} />
+                <Text style={{color: 'grey', fontStyle:'italic'}}>Version bêta</Text>
                     <View style = {style.leftNavContent}>
                             <View style = {style.strikeIndicator}>
-                                <Image source={require('../src/images/strike.png')} />
+                                <FontAwesome6 name="fire-flame-curved" size={22} color="#FF4D00" />
                                 <Text style={{color: '#FFFFFF'}}>0</Text>
                             </View>
-                        <Image source={require('../src/images/settings.png')} style = {{width: 22, height: 22}} />
+                        <FontAwesome6 name="gear" size={22} color="white" />
                     </View>
             </View>
         )
